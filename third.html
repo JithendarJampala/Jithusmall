@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="styles.css" rel="stylesheet"> 
 </head>
-<body data-floor="First">
+<body data-floor="Third">
     <header>
         <!-- <img src="images/icon.png"> -->
         <img src="images/Screenshot 2026-01-04 162439.png">
@@ -49,7 +49,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-2"> Loading.......</h1></div>
+                <h1 id="Third-stall-2"> Loading.......</h1></div>
             </div>
         </div>
         <div 
@@ -61,7 +61,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-3"> Loading.......</h1></div>
+                <h1 id="Third-stall-3"> Loading.......</h1></div>
             </div>
         </div>
         <div 
@@ -73,7 +73,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-4"> Loading.......</h1></div>
+                <h1 id="Third-stall-4"> Loading.......</h1></div>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-5"> Loading.......</h1></div>
+                <h1 id="Third-stall-5"> Loading.......</h1></div>
             </div>
         </div>
         
@@ -98,7 +98,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-6"> Loading.......</h1></div>
+                <h1 id="Third-stall-6"> Loading.......</h1></div>
             </div>
         </div>
         <div 
@@ -110,7 +110,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-7"> Loading.......</h1></div>
+                <h1 id="Third-stall-7"> Loading.......</h1></div>
             </div>
         </div>
         <div 
@@ -122,7 +122,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-8"> Loading.......</h1></div>
+                <h1 id="Third-stall-8"> Loading.......</h1></div>
             </div>
         </div>
         <div 
@@ -134,7 +134,7 @@
                 <div class="item">
                 <h1 class="liveStatus"> LiveStatus : 8 People</h1></div>
                 <div class="item">
-                <h1 id="First-stall-9"> Loading.......</h1></div>
+                <h1 id="Third-stall-9"> Loading.......</h1></div>
             </div>
         </div>
 
@@ -142,7 +142,7 @@
     </div>
     <script>
          document.getElementById("sub-btn").addEventListener("click",()=>{
-        document.getElementById("First-stall-2").innerText="Changed"    
+        document.getElementById("Third-stall-2").innerText="Changed"    
         })
     </script>
     <!-- <script type="module">
@@ -168,7 +168,7 @@ const firebaseConfig = {
         document.getElementById("sub-btn").addEventListener("click",()=>{create();
             setValues();})
         function update(){
-            let id ="First-stall-";
+            let id ="Third-stall-";
             let stall_num=document.getElementById('peopleCount').value;
             console.log(stall_num);
             id+=stall_num;
@@ -185,7 +185,7 @@ const firebaseConfig = {
             get(ref(db,"ground/")).then(snapshot=>{
                 let mat = snapshot.val();
                 for(let i=1;i<=9;i++){
-                    document.getElementById("First-stall-"+i).innerText=mat[i];
+                    document.getElementById("Third-stall-"+i).innerText=mat[i];
                 }
             });
         }
