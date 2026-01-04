@@ -1,0 +1,123 @@
+body{
+    background-color: rgba(233, 170, 44, 0);
+    font-family: Arial, sans-serif;
+}
+header img{
+    height: 60px;
+    object-fit: contain;
+}
+header{
+    background-color: #1A2A3A;
+
+
+    /* background: linear-gradient(
+        90deg,
+        #0B1F3B,
+        #102A52
+    ); */
+    display: flexbox;
+    flex-direction: row;
+    padding-top: 20px;
+    text-align:center;
+    justify-content: center;
+    padding: 10px;
+}
+header h3{
+    text-shadow:4px 4px #5a080f;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(9, 212, 234);
+    background-color: rgba(247, 251, 254, 0);
+}
+
+nav{
+    background-color: rgb(246, 241, 241);
+    height: 40px;
+    display:flex;
+    flex-direction: row;
+    font-weight:600;
+    border: 6PX solid #1A2A3A;
+}
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    font-variant: normal;
+    padding: 10px;
+    text-decoration: none;
+    color: rgba(13, 82, 114, 0.885);
+   
+}
+nav a:hover{
+    color: rgb(13, 82, 114);
+    text-decoration: underline;
+    font-weight: 700;
+    background-color: #1A2A3A;
+}
+.card{
+    background-color:white;
+    border-radius: 12px;
+    border: 6px solid #1a2a3adc;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    max-width : 900px;
+    height: auto;
+    align-content: center;
+    align-items: center;
+    justify-content:left;
+    gap: 15px;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    padding: 5%;
+    box-shadow: 0 0 30px  #1a2a3a;
+}
+select{
+    font-family: Arial, sans-serif;
+    width: 60%;
+    min-width: 30%;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 12px;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid #C6A15C;
+    box-shadow: 0 0 9px rgb(148, 129, 24);
+}
+option{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #1a2a3a
+}
+select :hover{
+    background-color: #C6A15C;
+}
+option :hover{
+    color: #C6A15C;
+}
+#btn,#sub-btn{
+    margin: 4px;
+    padding: 4px;
+    color: #1A2A3A;
+    /* color: #cfe906; */
+    /* background-color: #e42464; */
+    background-color: #c6a15c;
+    text-indent: 2px;
+    font-family: sans-serif;
+    padding-right: 9px;
+    font-size: large;
+    font-weight: 900;
+    border-radius: 3px;
+    /* text-shadow: 0 0 13px #fefcfcf9; */
+}
+#input{
+    font-size: 19px; color: #C6A15C;
+    background-color: #1A2A3A; padding: 12px;
+    font-weight: 500;
+}
+
+
+@media Screen {
+    
+}

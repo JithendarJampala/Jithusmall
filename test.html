@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="btn">Write</button>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getDatabase, ref, set } 
+  from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+  const firebaseConfig = {
+  apiKey: "AIzaSyBGBl7eIwUVYELtFwLtx8gI97wPWzWW6x0",
+  authDomain: "mall-database.firebaseapp.com",
+  databaseURL: "https://mall-database-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "mall-database",
+  storageBucket: "mall-database.firebasestorage.app",
+  messagingSenderId: "445602997408",
+  appId: "1:445602997408:web:b7cad53fa09b07754195c5",
+  measurementId: "G-Y4668SDFK0"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
+document.getElementById("btn").addEventListener("click", () => {
+    console.log("Attempting write...");
+    set(ref(db, "test/value"), "WORKS")
+     .then(() => console.log("SUCCESS"))
+     .catch(err => console.error(err));
+});
+</script>
+
+</body>
+</html>

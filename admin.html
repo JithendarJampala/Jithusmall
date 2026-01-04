@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+       <!-- <img src="images/icon.png"> -->
+       <img src="images/Screenshot 2026-01-04 162439.png">
+       <img src="images/gold-text-logo.png">
+       <!-- <img src="images/logo-text.png"> -->
+    </header>
+    <!-- <nav style="display: flex; flex-direction: row;
+    justify-content: flex-start;flex-wrap: wrap;">
+        <a href="index.html" ">HOME</a>
+        <a href="ground.html">GROUND</a>
+        <a href="first.html">FIRST</a>
+        <a href="second.html">SECOND</a>
+        <a href="third.html">THIRD</a>  
+        <a href="admin.html" id="admin-btn"
+        >Admin</a>
+    </nav> -->
+    <nav style="display: flex; flex-direction: row;
+    justify-content: flex-start;flex-wrap: wrap;">
+        <a style="color: #C6A15C;" href="index.html" ">HOME</a>
+        <a style="color: #C6A15C;" href="ground.html">GROUND</a>
+        <a style="color: #C6A15C;" href="first.html">FIRST</a>
+        <a style="color: #C6A15C;" href="second.html">SECOND</a>
+        <a style="color: #C6A15C;" href="third.html">THIRD</a>
+        <a style="color: #C6A15C;" href="fourth.html">FOURTH</a>
+        <a style="color: #C6A15C;" href="admin.html" id="admin-btn"
+        >Admin</a>
+    </nav>  
+
+    <div class="card">
+        <h1> DROP DOWN MENU</h1>
+        
+        <select class="floors" id="floors">
+            <option value="" disabled selected hidden>Select Floor</option>
+            <option value="Ground">Ground</option>
+            <option value="First">First</option>
+            <option value="Second">Second</option>
+            <option value="Third">Third</option>
+            <option value="Fourth">Fourth</option>
+        </select>
+        <select id="malls" class="malls"">
+            <option value="" style="display:none;" selected>Select Mall</option>
+            <option value="1">Stall-1</option>
+            <option value="2">Stall-2</option>
+            <option value="3">Stall-3</option>
+            <option value="4">Stall-4</option>
+            <option value="5">Stall-5</option>
+            <option value="6">Stall-6</option>
+            <option value="7">Stall-7</option>
+            <option value="8">Stall-8</option>
+            <option value="9">Stall-9</option>
+        </select>
+        <div style="display: flex; flex-direction: column; flex-wrap: wrap;
+        gap: 10px; align-items:
+     center;justify-content: center;">
+    <label style="font-size: 19px; color:#1A2A3A;
+    background-color: aliceblue; padding: 12px;
+    font-weight: 700;"
+    >Enter Number of People Waiting</label>
+    <!-- <input type="text" placeholder=
+        "Enter Number of People Waiting"
+        class="peopleCount" id="peopleCount"> -->
+        <input type="text" id="input" 
+        placeholder="Enter the value " 
+        style="display: none;">
+    </div>
+    <button class="count-btn" id="sub-btn"">SUBMIT</button>
+
+    <script type="module" src="admin.js">
+       
+
+        
+        </script>
+        
+</body
+</html>
+
+<!-- // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+// import { getDatabase, get, ref } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBGBl7eIwUVYELtFwLtx8gI97wPWzWW6x0",
+//   authDomain: "mall-database.firebaseapp.com",
+//   projectId: "mall-database",
+//   storageBucket: "mall-database.firebasestorage.app",
+//   messagingSenderId: "445602997408",
+//   appId: "1:445602997408:web:b7cad53fa09b07754195c5"
+// };
+
+// const app = initializeApp(firebaseConfig);
+// const db = getDatabase(app);
+
+// const data ={
+//   Ground :["g1","g2","g3","g4"],
+//   First :["f1","f2","f3","f4"],
+//   Second :["s1","s2","s3","s4"],
+//   Third : ["t1","t2","t3","t4"],
+//   Fourth : ["four1","four2","four3","four4"]
+// }
+
+// const floor = document.getElementById("floors");
+
+// floor.addEventListener("change",()=>{
+//   const stall = document.getElementById("malls");
+//   stall.style.display="block";
+//   stall.innerHTML="<select id='malls'></select>"
+//   let i=1;
+//   document.getElementById("msg").innerText=` Hello ${stall.value}`;
+//   data[floor.value].forEach(e=>{
+//     const op = document.createElement("option");
+//     op.value=i++;
+//     op.textContent=e;
+//     stall.appendChild(op);
+//   })
+// })
+
+// const mall = document.getElementById("malls");
+// mall.addEventListener("change",()=>{
+//   document.getElementById("msg2").innerText=`The id can be ${floor.value}-${mall.value}`
+// }) -->
