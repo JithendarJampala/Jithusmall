@@ -38,6 +38,8 @@ nav{
     flex-direction: row;
     font-weight:700;
     flex-wrap: wrap;
+    overflow: hidden;
+    gap: 6px;
 }
 nav a{
     font-family: 'Montserrat', sans-serif;
@@ -49,46 +51,15 @@ nav a{
     /* color: #C6A15c; */
 }
 nav a:hover{
+    border-radius: 6px;
     background-color: azure;
     color: #1A2A3A;
     /* color: #C6A15C; */
     text-decoration:none;
     font-weight: 700;
-    font-size: 17px;
+    transform: scale(1.15);
 }
 
-.eventBox{
-    background-color:white;
-    border-radius: 12px;
-    border: 6px solid #1A2A3A;
-    display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    align-content: center;
-    align-items: center;
-    justify-content:center;
-    gap: 15px;
-    padding: 3%;
-    padding-bottom: 3%;
-    box-shadow: 0 0 6px #1a2a3ac7;
-    margin: 1%;
-    /* min-height: 500px; */
-    width: 100;
-}
-.event{
-    background-color: #C6A15c;
-    border: 6px solid #1A2A3A;
-    width: 89%;
-    max-width: 600px;
-    height: auto;
-    box-shadow: 0 0 13px  #1A2A3A;
-    border-radius: 12px;
-}
-/* .event img{
-    height: 30%;
-    min-width: 40%;
-    object-fit:cover;
-} */
 .cardHolderBox{
     background-color:white;
     border-radius: 12px;
@@ -183,4 +154,41 @@ nav a:hover{
         padding: 14px;
         margin: 4px;
     }
+}
+
+footer{
+    
+    background-color: #0d243a;
+    color: #C6A15c;
+    height: 60px;
+    bottom: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    
+}
+
+
+.events{
+    /* background-color:#5a080f; */
+    padding: 5px;
+    margin: 5px 30px;
+    min-height: 60vh;
+}
+.homebody{
+    min-height: 100vh;
+    /* background-color:#e42464; */
+}
+
+.event {
+    background-image: url(images/chirstmas-Event.png);
+    width: 70%;
+    aspect-ratio: 16 / 9;       /* RESPONSIVE HEIGHT */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    border: 6px solid #C6A15c;
 }
