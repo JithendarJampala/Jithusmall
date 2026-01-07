@@ -1,0 +1,194 @@
+body{
+    background-color: rgba(233, 170, 44, 0);
+    /* background-image: url(mall-bg.jpg); */
+}
+
+header img{
+    height: 60px;
+    object-fit: contain;
+}
+header{
+    background-color: #1A2A3A;
+
+
+    /* background: linear-gradient(
+        90deg,
+        #0B1F3B,
+        #102A52
+    ); */
+    display: flexbox;
+    flex-direction: row;
+    padding-top: 20px;
+    text-align:center;
+    justify-content: center;
+    padding: 10px;
+}
+header h3{
+    text-shadow:4px 4px #5a080f;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(9, 212, 234);
+    background-color: rgba(247, 251, 254, 0);
+}
+
+nav{
+    background-color:#C6A15c;
+    height: 40px;
+    display:flex;
+    flex-direction: row;
+    font-weight:700;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 6px;
+}
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    font-variant: normal;
+    padding: 10px;
+    text-decoration: none;
+    color: #0d243a;
+   
+    /* color: #C6A15c; */
+}
+nav a:hover{
+    border-radius: 6px;
+    background-color: azure;
+    color: #1A2A3A;
+    /* color: #C6A15C; */
+    text-decoration:none;
+    font-weight: 700;
+    transform: scale(1.15);
+}
+
+.cardHolderBox{
+    background-color:white;
+    border-radius: 12px;
+    border: 6px solid #1A2A3A;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content: center;
+    align-items: center;
+    justify-content:left;
+    gap: 15px;
+    padding-left: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    box-shadow: 0 0 6px #1a2a3ac7;
+    margin: 1%;
+
+}
+.card{
+    background-color: #C6A15c;
+    border: 6px solid #1A2A3A;
+    width: 380px;
+    height: auto;
+    box-shadow: 0 0 13px  #1A2A3A;
+    border-radius: 12px;
+}
+
+.peopleCount{
+    display: block;
+    margin: 0 auto;
+    min-height: 39px;
+    max-width: 380px;
+    width: 80%;
+
+    border: 3px solid rgb(153, 147, 76);
+    border-radius: 10px;
+
+    font-size: 16px;
+    outline: none;
+    padding: 12px;
+    margin: 20px;
+
+}
+.peopleCount::placeholder{
+    color: brown;
+}
+.count-btn{
+    margin: 4px;
+    padding: 4px;
+    color: #cfe906;
+    background-color: #e42464;
+    text-indent: 2px;
+    font-style: italic;
+    padding-right: 9px;
+}
+.cardImage{
+    background-color: aqua;
+    max-width: 100%;
+    min-height: 300px;
+    margin: 3px;
+    background-image: url(images/burger.png);
+    background-size: cover;
+    background-position: center;
+}
+.statusBox{
+    background-color: rgb(253, 247, 247);
+    max-width: 99%;
+    min-height: 180px;
+    margin: 9px;
+    box-shadow: 0 0 6px #1A2A3A;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.statusBox h1{
+    font-size: large;
+    color: #1A2A3A;
+    margin-left: 19px;
+}
+.statusBox h1.liveStatus,
+.statusBox h1.waitingTime{
+    display:inline-block ;
+}
+
+@media (max-width: 500px){
+    .card{
+        min-width: 90%;
+        min-height: 300px;
+    }
+    .cardHolderBox{
+        justify-content: center;
+        padding: 14px;
+        margin: 4px;
+    }
+}
+
+footer{
+    
+    background-color: #0d243a;
+    color: #C6A15c;
+    height: 60px;
+    bottom: 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    
+}
+
+
+.events{
+    /* background-color:#5a080f; */
+    padding: 5px;
+    margin: 5px 30px;
+    min-height: 60vh;
+}
+.homebody{
+    min-height: 100vh;
+    /* background-color:#e42464; */
+}
+
+.event {
+    background-image: url(images/chirstmas-Event.png);
+    width: 70%;
+    aspect-ratio: 16 / 9;       /* RESPONSIVE HEIGHT */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    border: 6px solid #C6A15c;
+}
