@@ -79,7 +79,7 @@ nav a:hover{
 
 }
 .card{
-    background-color: #C6A15c;
+    background-color: #E3D8C6;
     border: 6px solid #1A2A3A;
     width: 380px;
     height: auto;
@@ -116,7 +116,7 @@ nav a:hover{
     padding-right: 9px;
 }
 .cardImage{
-    background-color: aqua;
+    background-color: #ffffff;
     max-width: 100%;
     min-height: 300px;
     margin: 3px;

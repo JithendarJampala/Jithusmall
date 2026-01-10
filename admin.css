@@ -31,27 +31,34 @@ header h3{
 }
 
 nav{
-    background-color: rgb(246, 241, 241);
+    background-color:#C6A15c;
     height: 40px;
     display:flex;
     flex-direction: row;
-    font-weight:600;
-    border: 6PX solid #1A2A3A;
+    font-weight:700;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 6px;
 }
 nav a{
     font-family: 'Montserrat', sans-serif;
     font-variant: normal;
     padding: 10px;
     text-decoration: none;
-    color: rgba(13, 82, 114, 0.885);
+    color: #0d243a;
    
+    /* color: #C6A15c; */
 }
 nav a:hover{
-    color: rgb(13, 82, 114);
-    text-decoration: underline;
+    border-radius: 6px;
+    background-color: azure;
+    color: #1A2A3A;
+    /* color: #C6A15C; */
+    text-decoration:none;
     font-weight: 700;
-    background-color: #1A2A3A;
+    transform: scale(1.15);
 }
+
 .card{
     background-color:white;
     border-radius: 12px;

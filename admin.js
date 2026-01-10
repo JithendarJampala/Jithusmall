@@ -41,7 +41,7 @@
               waitingTime = document.getElementById("input").value;
               let rfloor = floor.value.toLowerCase();
               let i= document.getElementById("malls").value;
-              set(ref(db,`/${rfloor}/${i}`),waitingTime+" Minutes")
+              set(ref(db,`/${rfloor}/${i}`),waitingTime)
              console.log("Hello")
 
         })
