@@ -33,7 +33,6 @@ header h3{
 
 nav{
     background-color:#C6A15c;
-    height: 40px;
     display:flex;
     flex-direction: row;
     font-weight:700;
@@ -50,6 +49,13 @@ nav a{
    
     /* color: #C6A15c; */
 }
+.nav-link.active {
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+  
 nav a:hover{
     border-radius: 6px;
     background-color: azure;
@@ -85,6 +91,9 @@ nav a:hover{
     height: auto;
     box-shadow: 0 0 13px  #1A2A3A;
     border-radius: 12px;
+}
+.card :hover{
+    transform:scale(1);
 }
 
 .peopleCount{
@@ -133,6 +142,7 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
 }
 .statusBox h1{
     font-size: large;
@@ -144,17 +154,7 @@ nav a:hover{
     display:inline-block ;
 }
 
-@media (max-width: 500px){
-    .card{
-        min-width: 90%;
-        min-height: 300px;
-    }
-    .cardHolderBox{
-        justify-content: center;
-        padding: 14px;
-        margin: 4px;
-    }
-}
+
 
 footer{
     
@@ -190,5 +190,41 @@ footer{
     background-size: cover;
     background-position: center;
     border-radius: 12px;
-    border: 6px solid #C6A15c;
+    border: 3px solid #C6A15c;
+}
+.section-heading {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1c2b3a; /* deep navy */
+    margin: 30px 0 20px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    /* font-family: "Playfair Display", "Times New Roman", Georgia, serif; */
+}
+
+.section-heading::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #c6a15c, #f1d27a);
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
+
+@media (max-width:700px){
+    .event{
+        width: 95%;
+        aspect-ratio: 16/9;
+        /* border: 1px solid black; */
+        border: 3px solid #C6A15c;
+    }
+    .cardHolderBox{
+        justify-content: center;
+        padding: 14px;
+        margin: 4px;
+    }
 }

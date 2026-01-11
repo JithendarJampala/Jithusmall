@@ -29,7 +29,8 @@ onValue(stallsref, (snapshot) => {
         if(h1!=null)h1.style.display="inline-block"
         console.log(`${h1id}`)
         if (h1) {
-            h1.textContent ="Waiting Time : "+ data[id] +" Minutes";
+            if(floor=="Fourth") h1.textContent=`Available Seats : ${data[id]} (2:30 pm)`;
+            else h1.textContent ="Waiting Time : "+ data[id] +" Minutes";
         }
 
         console.log(`Updating: ${h1id} → ${data[id]}`);

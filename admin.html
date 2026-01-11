@@ -24,7 +24,7 @@
         <a href="third.html">THIRD</a> 
         <a href="fourth.html">FOURTH</a>   
         <a href="admin.html" id="admin-btn"
-        >ADMIN</a>
+        style="background-color: #1A2A3A; color: #C6A15C;">ADMIN</a>
     </nav>
     <!-- <nav style="display: flex; flex-direction: row;
     justify-content: flex-start;flex-wrap: wrap;">
@@ -39,35 +39,25 @@
     </nav>   -->
 
     <div class="card">
-        <h1> DROP DOWN MENU</h1>
+        <h1> Welcome To Admin Portal</h1>
         
         <select class="floors" id="floors">
             <option value="" disabled selected hidden>Select Floor</option>
-            <option value="Ground">Ground</option>
-            <option value="First">First</option>
-            <option value="Second">Second</option>
-            <option value="Third">Third</option>
-            <option value="Fourth">Fourth</option>
+            <option value="Ground">GAME ZONE (Ground Floor)</option>
+            <option value="Third">FOOD COURT (Third Floor)</option>
+            <option value="Fourth">THE GRAND CINEMA (Fourth Floor)</option>
         </select>
         <select id="malls" class="malls"">
-            <option value="" style="display:none;" selected>Select Mall</option>
-            <option value="1">Stall-1</option>
-            <option value="2">Stall-2</option>
-            <option value="3">Stall-3</option>
-            <option value="4">Stall-4</option>
-            <option value="5">Stall-5</option>
-            <option value="6">Stall-6</option>
-            <option value="7">Stall-7</option>
-            <option value="8">Stall-8</option>
-            <option value="9">Stall-9</option>
+            <option id="stallopt" disabled selected hidden value="" style="display:none;" selected>Stalls</option>
+            <option value="" disabled selcted hidden>Select Floor</option>
         </select>
         <div style="display: flex; flex-direction: column; flex-wrap: wrap;
         gap: 10px; align-items:
      center;justify-content: center;">
     <label style="font-size: 19px; color:#1A2A3A;
-    background-color: aliceblue; padding: 12px;
+     padding: 12px;
     font-weight: 700;"
-    >Enter Number of People Waiting</label>
+    id="labelhid" >Select Floor and Stall</label>
     <!-- <input type="text" placeholder=
         "Enter Number of People Waiting"
         class="peopleCount" id="peopleCount"> -->
@@ -75,7 +65,9 @@
         placeholder="Enter the value " 
         style="display: none;">
     </div>
+    
     <button class="count-btn" id="sub-btn"">SUBMIT</button>
+    <div id="toast" style="margin: 3%; width: 36px;"></div>
 
     <script type="module" src="admin.js">
        
